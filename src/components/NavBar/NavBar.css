@@ -1,0 +1,13 @@
+.navbar-brand img {
+    width: 95px;
+    height: 95px;
+}
+
+.navbar_subContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
