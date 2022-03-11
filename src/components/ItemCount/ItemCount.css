@@ -1,0 +1,39 @@
+.itemCount_main {
+    text-align: center;
+    background-color: #000000;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+.itemCount_main p, span {
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.itemCount_main button {
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}
+
+.itemCount_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemCount_content button {
+    border-radius: 20px;
+    border-style: none;
+    width: 2em;
+    height: 2em;
+    background-color:#f0f8ff;
+    font-weight: bolder;
+}
+
+.addButton {
+    margin-top: 1em;
+    font-weight: bolder;
+    border-style: none;
+    padding: 0.5em;
+}
