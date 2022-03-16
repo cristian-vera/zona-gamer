@@ -1,0 +1,28 @@
+.card_main {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.card_main img {
+    width: 200px;
+    height: 300px;
+}
+
+.card_content {
+    background-color: #f0f8ff;
+    width: 200px;
+}
+
+.card_subContent p {
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    line-height: 1em;
+    margin-bottom: 0.4em;
+}
+
+.verMas {
+    text-align: center;
+    padding-bottom: 0.5em;
+}

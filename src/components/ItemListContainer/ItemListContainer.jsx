@@ -1,18 +1,19 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
+import "./ItemListContainer.css";
+import ItemList from './ItemList';
 
 const ItemListContainer = (props) => {
 
   let saludo = props.texto;
 
-const onAdd = () => {
-  console.log('agregar al carrito');
-};
-
   return (
-    <div>
-      <h2>{saludo}</h2>
-      <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+    <div className="container_main">
+      <div>
+        <h2>{saludo}</h2>
+      </div>
+      <div>
+        <ItemList/>
+      </div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ function App() {
     <div>
       <NavBar />
       <h1>"Encuentra tu proxima aventura"</h1>
-      <ItemListContainer texto="Bienvenidos:" />
+      <ItemListContainer texto="Bienvenidos:"/>
     </div>
   );
 }
