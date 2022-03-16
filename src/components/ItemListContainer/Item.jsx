@@ -13,7 +13,7 @@ const onAdd = () => {
       <div className="card_content">
         <img src={producto.img} alt="" />
         <div className="card_subContent">
-          <p>{producto.title}</p>
+          <p className="card_titulo">{producto.title}</p>
           <p>Precio: $ {producto.price}</p>
           <p>{producto.description}</p>
         </div>

@@ -16,10 +16,14 @@
 
 .card_subContent p {
     text-align: center;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
     line-height: 1em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.6em;
+}
+
+.card_titulo {
+    height: 1.6em;
 }
 
 .verMas {

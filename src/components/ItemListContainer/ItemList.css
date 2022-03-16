@@ -2,4 +2,14 @@ h2 {
     color: aliceblue;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    text-align: center;
 }
+
+.container_item {
+    display: flex;
+    justify-content:start;
+    flex-wrap: wrap;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+

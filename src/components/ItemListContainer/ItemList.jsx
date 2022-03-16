@@ -38,7 +38,9 @@ const ItemList = ({card}) => {
   return (
     <div>
       <h2>Productos:</h2>
-      {loading ? <p>Cargando...</p> : listaProductos.map((producto)=><Item card={card} producto={producto} key={producto.id}/>)}
+      <div className="container_item">
+        {loading ? <p>Cargando...</p> : listaProductos.map((producto)=><Item card={card} producto={producto} key={producto.id}/>)}
+      </div>
     </div>
   )
 }
