@@ -6,12 +6,12 @@ const ItemList = ({card}) => {
   const [listaProductos, setListaProductos] = useState([]);
   const [loading, setLoading] = useState(true);
   const productos = [
-    {id:'01', title:'Age of empires 2 definitive edition', description:'juego de estrategia', price: 4900, img:'/images/productos/age-of-empires-2-definitive-edition-pc.jpg'},
-    {id:'02', title:'Age of empires 4', description:'juego de estrategia', price: 4500, img:'/images/productos/Age-of-Empires-4-pc.jpg'},
-    {id:'03', title:'God of war', description:'juego de acción', price: 1900, img:'/images/productos/god-of-war-ps4.png'},
-    {id:'04', title:'Injustice 2', description:'juego de pelea', price: 2000, img:'/images/productos/injustice_2_xbox.jpeg'},
-    {id:'05', title:'Resident evil 2', description:'juego de acción', price: 4500, img:'/images/productos/resident_evil_2_ps4.jpg'},
-    {id:'06', title:'Warhammer 40.000 Inquisitor Martyr', description:'juego de estrategia', price: 3000, img:'/images/productos/warhammer-40000-inquisitor-martyr-xbox.jpg'}
+    {id:'01', title:'Age of empires 2 definitive edition', description:'juego de estrategia', price: 900, img:'/images/productos/age-of-empires-2-definitive-edition-pc.jpg'},
+    {id:'02', title:'Age of empires 4', description:'juego de estrategia', price: 4000, img:'/images/productos/Age-of-Empires-4-pc.jpg'},
+    {id:'03', title:'God of war', description:'juego de acción', price: 1500, img:'/images/productos/god-of-war-ps4.png'},
+    {id:'04', title:'Resident evil 2', description:'juego de acción', price: 1600, img:'/images/productos/resident_evil_2_ps4.jpg'},
+    {id:'05', title:'Injustice 2', description:'juego de pelea', price: 700, img:'/images/productos/injustice_2_xbox.jpeg'},
+    {id:'06', title:'Warhammer 40.000 Inquisitor Martyr', description:'juego de estrategia', price: 500, img:'/images/productos/warhammer-40000-inquisitor-martyr-xbox.jpg'}
   ];
 
   const getProducts = new Promise((resolve, reject) =>{
