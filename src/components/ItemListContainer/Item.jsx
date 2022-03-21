@@ -1,12 +1,7 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
 import "./Item.css";
 
 const Item = ({producto}) => {
-
-const onAdd = () => {
-  console.log('agregar al carrito');
-};
   
   return (
     <div className="card_main">
@@ -20,7 +15,6 @@ const onAdd = () => {
         <div className="verMas">
           <button>Ver Más</button>
         </div>
-        <ItemCount stock={5} initial={1} onAdd={onAdd}/>
       </div>
     </div>
   )

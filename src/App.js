@@ -2,7 +2,6 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import NavBar from './components/NavBar/NavBar';
-import './components/ItemDetailContainer/ProductsAPI';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 

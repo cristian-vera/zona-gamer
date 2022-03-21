@@ -1,0 +1,25 @@
+.card_detailMain {
+    background-color: #f4f4f4;
+    border-color: #000000;
+    border-style: groove;
+    width: 75%;
+}
+
+.card_detailMain img {
+    width: 225px;
+    height: 300px;
+}
+
+.card_detailContent {
+    display: flex;
+}
+
+.card_detailSubcontent {
+    padding-left: 1em;
+}
+
+.card_detailSubcontent {
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}

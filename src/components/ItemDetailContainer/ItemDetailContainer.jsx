@@ -1,36 +1,31 @@
-import React, { useState } from 'react';
-import ItemDetailList from './ItemDetailList';
-import { getProducts, getProducts2 } from './ProductsAPI';
+import React, {useEffect, useState} from 'react';
+import ItemDetail from './ItemDetail';
 
-function ItemDetailContainer() {
+const APIURL = "https://6233ec14373284533dfa7c78.mockapi.io/productos";
 
+const ItemDetailContainer = () => {
   const [products, setProducts] = useState([]);
-  const getProductsList = () => {
-    getProducts()
-    .then((result) => result.json())
-    .then((products) =>{
-      console.log(products);
-      setProducts(products);
-    });
-  };
 
-  const getProductInfo = () => {
+  useEffect(() =>{
     let array = [];
-    for(let i=1; i <= 6; i++){
-      getProducts2(i)
-      .then((result) => result.json())
-      .then((product) =>{
-        console.log(product);
-        array.push(product);
-        setProducts([...array]);
-      });
-    }
-  };
+    const getProductsDetail = (id) => {
+          setTimeout(() =>{
+            fetch(`${APIURL}/${id}`)
+            .then((result) => result.json())
+            .then((data) =>{
+            array.push(data);
+            setProducts(array);
+          });
+        },2000);
+      };
+      getProductsDetail(2);
+  },[]);
+
+  console.log(products);
 
   return (
     <div>
-      <button onClick={getProductInfo}>ver lista productos</button>
-      <ItemDetailList lista={products}/>
+      {products.map((product) => <ItemDetail product={product} key={product.id}/>)}
     </div>
   )
 }
