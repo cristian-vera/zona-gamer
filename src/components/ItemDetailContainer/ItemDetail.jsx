@@ -13,7 +13,7 @@ const onAdd = () => {
       <div className="card_detailContent">
         <div>
           <img src={product.imagen} alt="" />
-          <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+          <ItemCount stock={10} initial={1} onAdd={onAdd}/>
         </div>
         <div className="card_detailSubcontent">
           <h3>{product.title}:</h3>

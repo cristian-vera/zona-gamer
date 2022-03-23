@@ -1,24 +1,27 @@
 import React, {useEffect, useState} from 'react';
+import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 
 const APIURL = "https://6233ec14373284533dfa7c78.mockapi.io/productos";
 
 const ItemDetailContainer = () => {
   const [products, setProducts] = useState([]);
+  
+  const {itemId} = useParams();
+  console.log(itemId);
 
   useEffect(() =>{
-    let array = [];
-    const getProductsDetail = (id) => {
+    const getProductsDetail = () => {
           setTimeout(() =>{
-            fetch(`${APIURL}/${id}`)
+            fetch(`${APIURL}`)
             .then((result) => result.json())
             .then((data) =>{
-            array.push(data);
-            setProducts(array);
+            setProducts(data);
+            console.log(data);
           });
         },2000);
       };
-      getProductsDetail(2);
+      getProductsDetail();
   },[]);
 
   console.log(products);

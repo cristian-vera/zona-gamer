@@ -30,3 +30,9 @@
     text-align: center;
     padding-bottom: 0.5em;
 }
+
+.verMas button {
+    border-radius: 0.9em;
+    background-color: #000000;
+    color: #f0f8ff;
+}
