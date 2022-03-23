@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 import "./NavBar.css";
-import { Link } from 'react-router-dom';
 
 function NavBar(){
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src="/images/zona-gamer-logo-sin-fondo.png" alt="logo" />
+                    <img src="/images/zona-gamer-logo-sin-fondo.png" alt="logo"/>
                 </Link>
                 <div className="navbar_subContent">
                     <CartWidget />

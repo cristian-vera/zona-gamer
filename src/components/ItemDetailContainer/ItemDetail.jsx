@@ -3,7 +3,7 @@ import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({product}) => {
-
+  
 const onAdd = () => {
   console.log('agregar al carrito');
 };
@@ -16,7 +16,7 @@ const onAdd = () => {
           <ItemCount stock={10} initial={1} onAdd={onAdd}/>
         </div>
         <div className="card_detailSubcontent">
-          <h3>{product.title}:</h3>
+          <h3>{product.title}</h3>
           <p>{product.detalle}</p>
           <p>Precio: $ {product.price}</p>
         </div>
