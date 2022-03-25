@@ -7,7 +7,6 @@ const ItemList = ({card}) => {
   const [listaProductos, setListaProductos] = useState([]);
   const [loading, setLoading] = useState(true);
   const {categoryId} = useParams();
-  console.log(categoryId);
   const productos = [
     {id:'1', title:'Age of empires 2 definitive edition', description:'juego de estrategia', price: 900,img:'/images/productos/age-of-empires-2-definitive-edition-pc.jpg', detail: "", category: "pc"},
     {id:'2', title:'Age of empires 4', description:'juego de estrategia', price: 4000, img:'/images/productos/Age-of-Empires-4-pc.jpg', detail: "", category: "pc"},

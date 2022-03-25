@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
 import "./ItemCount.css";
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [count, setCount] = useState(initial);
+    
     const increase = () =>{
       if(count < stock)
         setCount(count + 1);
@@ -12,6 +13,8 @@ const ItemCount = ({stock, initial, onAdd}) => {
         setCount(count - 1);
       }
     };
+
+    console.log(count);
 
   return (
     <div className="itemCount_main">

@@ -23,3 +23,10 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
+
+.card_buttonBuy button {
+    background-color: #0fb100;
+    color: #f4f4f4;
+    font-weight: bolder;
+    width: 100%;
+}
