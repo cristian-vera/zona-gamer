@@ -30,3 +30,17 @@
     font-weight: bolder;
     width: 100%;
 }
+
+.card_buttonBuyMore button {
+    background-color: #3400ad;
+    color: #f4f4f4;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.addToCard_success {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    font-weight: bolder;
+}

@@ -1,0 +1,15 @@
+.cart_container {
+    background-color: #ff0000;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.deleteButton {
+    background-color: #000000;
+    color:#f0f8ff;
+    border-radius: 1em;
+    height: 2.5em;
+    font-weight: bolder;
+}

@@ -14,8 +14,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
       }
     };
 
-    console.log(count);
-
   return (
     <div className="itemCount_main">
         <div className="itemCount_content">
@@ -23,7 +21,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
             <span>{count}</span>
             <button onClick = {increase}>+</button>
         </div>
-        <button className="addButton" onClick = {onAdd}>Agregar al carrito</button>
+        <button className="addButton" onClick = {()=>onAdd(count)}>Agregar al carrito</button>
     </div>
   )
 }

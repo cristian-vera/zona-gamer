@@ -1,9 +1,10 @@
 import React from 'react';
+import './Banner.css';
 
 const Banner = () => {
   return (
-    <div>
-        <h1>"Encuentra tu proxima aventura"</h1>
+    <div className="hero">
+        <img src="/images/banner.png" alt="" />
     </div>
   )
 }

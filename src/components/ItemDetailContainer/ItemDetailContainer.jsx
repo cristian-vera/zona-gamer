@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './ItemDetailContainer.css';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
     console.log(product);
 
   return (
-    <div>
+    <div className="card_detailContainer">
       {loading ? <p>Cargando...</p> : <ItemDetail product= {product}/>}
     </div>
   )
