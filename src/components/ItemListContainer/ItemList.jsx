@@ -2,8 +2,11 @@ import React, {useEffect, useState } from 'react';
 import './ItemList.css';
 import Item from './Item';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs } from 'firebase/firestore';
+import dataBase from '../../utils/firebase';
 
-const ItemList = ({card}) => {
+//codigo de itemList antes de firebase
+/* const ItemList = ({card}) => {
   const [listaProductos, setListaProductos] = useState([]);
   const [loading, setLoading] = useState(true);
   const {categoryId} = useParams();
@@ -39,7 +42,27 @@ const ItemList = ({card}) => {
     })
     .catch((error) =>console.log(error))
     .finally(()=> setLoading(false));
-  }, [categoryId]);
+  }, [categoryId]); */
+
+  const ItemList = ({card}) => {
+    const [listaProductos, setListaProductos] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const {categoryId} = useParams();
+  
+  useEffect(() =>{
+    const getData = async() =>{
+      const query = collection(dataBase, 'Items');
+      const response = await getDocs(query);
+      const dataItems= response.docs.map(doc=>{return {id: doc.id, ...doc.data()}});
+      if(!categoryId){
+        setListaProductos(dataItems);
+      } else {
+        setListaProductos(dataItems.filter((prod) => prod.category === categoryId));
+      }
+      setLoading(false);
+    };
+    getData();
+  },[categoryId]);
 
   console.log(listaProductos);
 
