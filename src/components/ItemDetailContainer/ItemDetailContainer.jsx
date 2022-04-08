@@ -38,11 +38,11 @@ const ItemDetailContainer = () => {
         console.log(dataDoc);
         const newDoc = {id: response.id, ...dataDoc};
         console.log(newDoc);
-        setProduct(dataDoc);
+        setProduct(newDoc);
         setLoading(false);
       };
       getData();
-    },[]);
+    },[itemId]);
 
     console.log(product);
 

@@ -26,7 +26,7 @@ export const CartProvider = ({children}) => {
         const newProducts = cart.filter(producto=> producto.item.id !== itemId);
         console.log(newProducts);
         setCart(newProducts);
-
+ 
     };
 
     const clear = () =>{

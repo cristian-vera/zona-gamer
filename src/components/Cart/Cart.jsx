@@ -3,11 +3,39 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import CartItem from "../CartItem/CartItem";
 import './Cart.css';
+import { addDoc, collection, Timestamp } from "firebase/firestore";
+import dataBase from "../../utils/firebase";
 
 
 export const Cart = () => {
     const carritoContext = useContext(CartContext);
     const cart = carritoContext.cart;
+
+    const sendOrder = async (e) =>{
+        e.preventDefault();
+        console.log(e, 'e');
+        const nombre = e.target[0].value;
+        const apellido = e.target[1].value;
+        const telefono = e.target[2].value;
+        const email = e.target[3].value;
+        
+        const newOrderRequest = {
+            buyer:{
+                name: nombre,
+                apellido: apellido,
+                telefono: telefono,
+                email: email
+            },
+            items: cart,
+            total: carritoContext.getTotalPrice(),
+            date: Timestamp.fromDate(new Date())
+        };
+        console.log('newOrderRequest', newOrderRequest);
+
+        const ordersCollection = collection(dataBase, 'orders');
+        const docReference = await addDoc(ordersCollection, newOrderRequest);
+        console.log('docRef', docReference);
+    };
 
     return(
         <div>
@@ -22,6 +50,20 @@ export const Cart = () => {
                     <div className="cart_containerContent">
                         <button className="deleteButton" onClick={carritoContext.clear}>Vaciar carrito</button>
                         <p className="cart_totalPrice">Precio total: $ {carritoContext.getTotalPrice()}</p>
+                    </div>
+                    <div className="cart_orderRequest">
+                        <h3>Completa tus datos para finalizar la compra:</h3>
+                        <form onSubmit={sendOrder}>
+                            <p>Nombre:</p>
+                            <input type="text" placeholder="nombre" />
+                            <p>Apellido:</p>
+                            <input type="text" placeholder="apellido" />
+                            <p>Telefono:</p>
+                            <input type="text" placeholder="telefono" />
+                            <p>Email</p>
+                            <input type="text" placeholder="email" />
+                            <button type="submit">Enviar orden</button>
+                        </form>
                     </div>
                 </div>
                 :
