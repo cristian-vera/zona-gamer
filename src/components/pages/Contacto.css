@@ -1,0 +1,45 @@
+.contacto_content {
+    background-color: #ff0000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.contacto_content h2 {
+    color: #000000;
+    text-align: start;
+    text-decoration:underline;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+.contacto_content p {
+    font-family: 'Poppins';
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.contacto_information {
+    display: flex;
+}
+
+.contacto_info {
+    padding-left: 1em;
+    line-height: 1.8em;
+    
+}
+
+.contacto_info h3 {
+    color: #000000;
+}
+
+.contacto_subInfo img {
+    padding-left: 16em;
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+    width: 500px;
+    height: 270px;
+}

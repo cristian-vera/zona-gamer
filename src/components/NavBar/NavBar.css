@@ -8,6 +8,12 @@
     justify-content: flex-end;
 }
 
+.nav-item {
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
 #navbarNav {
     justify-content: flex-end;
 }

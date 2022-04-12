@@ -18,6 +18,7 @@ const ItemDetailContainer = () => {
         const response = await getDoc(queryDoc);
         const dataDoc = response.data();
         console.log(dataDoc);
+        
         const newDoc = {id: response.id, ...dataDoc};
         console.log(newDoc);
         setProduct(newDoc);
@@ -30,7 +31,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className="card_detailContainer">
-      {loading ? <p>Cargando...</p> : <ItemDetail product= {product}/>}
+      {loading ? <p className='loading'>Cargando...</p> : <ItemDetail product= {product}/>}
     </div>
   )
 }

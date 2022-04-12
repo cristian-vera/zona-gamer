@@ -1,3 +1,20 @@
+# ANOTACIONES:
+
+**Nota: Informacion adicional sobre el proyecto**
+>Para este proyecto se ha utilizado la libreria de bootstrap para desarrollar el navBar. Para el resto de los componentes, se ha utilizado estilos css.
+
+### OBJETIVO DEL PROYECTO:
+- El proyecto "Zona-gamer" es una tienda e-commerce para la venta de videojuego. El sitio cuenta con una pagina principal donde se puede observar la lista de juego. Cada juego cuenta con la posibilidad de ver detalles sobre cada producto.
+
+- El usuario tendra la posibilidad de elegir la cantidad que quiere comprar para luego agregarlo al carrito.
+
+- Para la comodidad del usuario, el carrito cuenta con el boton para eliminar un producto especifico. Tambien tiene el boton de vaciar carrito en caso de querer eliminar todo los productos seleccionados.
+
+- Haciendo click sobre el logo de la tienda puede volver al inicio para continuar agregando otros productos al carrito.
+
+- Una vez que el usuario quiere realizar la compra, debera completar el formulario con los datos necesarios y finalmente enviar el pedido de la compra.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

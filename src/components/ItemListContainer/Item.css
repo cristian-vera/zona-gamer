@@ -16,10 +16,13 @@
 
 .card_subContent p {
     text-align: center;
+    padding-top: 0.4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
     line-height: 1em;
     margin-bottom: 0.6em;
+    font-family: 'Poppins';
+    font-weight: bolder;
 }
 
 .card_titulo {
@@ -29,6 +32,7 @@
 .verMas {
     text-align: center;
     padding-bottom: 0.5em;
+    font-family: 'Poppins';
 }
 
 .verMas button {

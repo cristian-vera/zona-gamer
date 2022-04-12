@@ -31,7 +31,7 @@ import dataBase from '../../utils/firebase';
     <div>
       <h2>Lista de juegos:</h2>
       <div className="container_item">
-        {loading ? <p>Cargando...</p> : listaProductos.map((producto)=><Item card={card} producto={producto} key={producto.id}/>)}
+        {loading ? <p className='loading_items'>Cargando...</p> : listaProductos.map((producto)=><Item card={card} producto={producto} key={producto.id}/>)}
       </div>
     </div>
   )

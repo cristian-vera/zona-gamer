@@ -4,6 +4,7 @@
     padding-right: 2em;
     padding-top: 1.5em;
     padding-bottom: 1em;
+    font-family: 'Poppins';
 }
 
 .deleteButton {
@@ -38,6 +39,8 @@
     border-width: 0.3em;
     margin-left: 10%;
     margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Poppins';
 }
 
 .cart_empty h4 {

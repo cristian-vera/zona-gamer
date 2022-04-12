@@ -12,6 +12,8 @@
 
 .card_detailContent {
     display: flex;
+    font-family: 'Poppins';
+    font-weight: bolder;
 }
 
 .card_detailSubcontent {

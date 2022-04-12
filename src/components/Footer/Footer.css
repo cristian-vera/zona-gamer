@@ -1,0 +1,11 @@
+.footer_content {
+    background-color: #000000;
+    text-align: center;
+    color:#faebd7;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.footer_content p {
+    font-family: 'Poppins';
+}

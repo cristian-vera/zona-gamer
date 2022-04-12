@@ -1,3 +1,15 @@
 .container_main {
     background-color: #ff0000;
 }
+
+.container_main h2 {
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+.loading_items {
+    font-size: 3em;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: #f0f8ff;
+}

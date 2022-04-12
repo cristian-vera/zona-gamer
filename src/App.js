@@ -9,6 +9,7 @@ import Contacto from './components/pages/Contacto';
 import Banner from './components/Banner/Banner';
 import { CartProvider } from './context/CartProvider';
 import { Cart } from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cart" element={ <Cart/> }/>
           <Route path="/contacto" element={ <Contacto/> }/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </CartProvider>
   );

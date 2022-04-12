@@ -8,6 +8,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
       if(count < stock)
         setCount(count + 1);
     };
+    
     const decrease = () =>{
       if(count > 0){
         setCount(count - 1);
