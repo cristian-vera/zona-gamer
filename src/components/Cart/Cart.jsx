@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import CartItem from "../CartItem/CartItem";
@@ -8,6 +8,7 @@ import dataBase from "../../utils/firebase";
 
 
 export const Cart = () => {
+    const [order, setOrder] = useState(null);
     const carritoContext = useContext(CartContext);
     const cart = carritoContext.cart;
 
@@ -33,12 +34,17 @@ export const Cart = () => {
         console.log('newOrderRequest', newOrderRequest);
 
         const ordersCollection = collection(dataBase, 'orders');
-        const docReference = await addDoc(ordersCollection, newOrderRequest);
-        console.log('docRef', docReference);
+        addDoc(ordersCollection, newOrderRequest)
+        .then((res)=> setOrder(res.id))
+        .catch((error)=> console.log(error))
+        .finally(()=>carritoContext.clear());
     };
 
     return(
         <div>
+            {order && <div className="orderSent">
+                <p>El pedido ha sido enviado. El numero de su orden de pedido es: <span>{order}</span></p></div>}
+
             {
                 cart.length>0 ?
                 <div className="cart_container">
@@ -62,7 +68,7 @@ export const Cart = () => {
                             <input type="text" placeholder="telefono" />
                             <p>Email</p>
                             <input type="text" placeholder="email" />
-                            <button type="submit">Enviar orden</button>
+                            <button type="submit"> Enviar orden</button>
                         </form>
                     </div>
                 </div>
@@ -76,7 +82,8 @@ export const Cart = () => {
                         <p>Mira nuestros productos aquí</p>
                     </Link>
                 </div>
-            }
+                }
         </div>
     )
 }
+
