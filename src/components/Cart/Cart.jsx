@@ -14,7 +14,7 @@ export const Cart = () => {
 
     const sendOrder = async (e) =>{
         e.preventDefault();
-        console.log(e, 'e');
+        
         const nombre = e.target[0].value;
         const apellido = e.target[1].value;
         const telefono = e.target[2].value;

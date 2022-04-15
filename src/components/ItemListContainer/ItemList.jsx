@@ -25,8 +25,6 @@ import dataBase from '../../utils/firebase';
     getData();
   },[categoryId]);
 
-  console.log(listaProductos);
-
   return (
     <div>
       <h2>Lista de juegos:</h2>

@@ -10,24 +10,19 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
 
     const {itemId} = useParams();
-    console.log(itemId);
 
     useEffect(() => {
       const getData = async()=>{
         const queryDoc = doc(dataBase,'Items', itemId);
         const response = await getDoc(queryDoc);
         const dataDoc = response.data();
-        console.log(dataDoc);
         
         const newDoc = {id: response.id, ...dataDoc};
-        console.log(newDoc);
         setProduct(newDoc);
         setLoading(false);
       };
       getData();
     },[itemId]);
-
-    console.log(product);
 
   return (
     <div className="card_detailContainer">

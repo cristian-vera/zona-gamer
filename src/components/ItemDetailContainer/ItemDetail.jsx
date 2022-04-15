@@ -6,14 +6,12 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({product}) => {
   const carritoContext = useContext(CartContext);
-  console.log('carritoContext-itemDetail', carritoContext);
 
   const [add, setAdd] = useState(0);
   const onAdd = (quantityToAdd) => {
     setAdd(quantityToAdd);
     carritoContext.addItem(product, quantityToAdd);
   };
-  console.log('quantity: '+add);
 
   return (
     <div className="card_detailMain">
