@@ -40,3 +40,77 @@
     background-color: #000000;
     color: #f0f8ff;
 }
+
+@media only screen and (min-width:500px) and (max-width:548px){
+    .card_main img {
+        width: 175px;
+        height: 250px;
+    }
+
+    .card_content {
+        background-color: #f0f8ff;
+        width: 175px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:499px){
+    .card_main img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card_content {
+        background-color: #f0f8ff;
+        width: 150px;
+    }
+
+    .card_subContent p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width:380px) and (max-width:399px){
+    .card_main img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card_content {
+        background-color: #f0f8ff;
+        width: 150px;
+    }
+
+    .card_subContent p {
+        font-size: 0.8em;
+    }
+    
+    .verMas {
+        text-align: center;
+        padding-bottom: 0.5em;
+        font-family: 'Poppins';
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:379px){
+    .card_main img {
+        width: 125px;
+        height: 175px;
+    }
+
+    .card_content {
+        background-color: #f0f8ff;
+        width: 125px;
+    }
+
+    .card_subContent p {
+        font-size: 0.7em;
+    }
+    
+    .verMas {
+        text-align: center;
+        padding-bottom: 0.5em;
+        font-family: 'Poppins';
+        font-size: 0.8em;
+    }
+}

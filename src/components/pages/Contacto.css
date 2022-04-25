@@ -40,6 +40,133 @@
     padding-left: 16em;
     padding-top: 2.5em;
     padding-bottom: 2em;
+    padding-right: 1em;
     width: 500px;
     height: 270px;
+}
+
+@media only screen and (min-width:746px) and (max-width:808px){
+    .contacto_content {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    }
+
+    .contacto_subInfo img {
+        padding-left: 11em;
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        width: 450px;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width:693px) and (max-width:745px){
+    .contacto_content {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    }
+
+    .contacto_subInfo img {
+        padding-left: 8em;
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        padding-right: 1em;
+        width: 400px;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:692px){
+    .contacto_content {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    }
+
+    .contacto_subInfo img {
+        padding-left: 6em;
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        padding-right: 1em;
+        width: 325px;
+        height: 270px;
+    }
+
+    .contacto_content h2 {
+        font-size: 1.7em;
+    }
+
+    .contacto_content p {
+        font-size: 1.4em;
+    }
+
+    .contacto_info h3 {
+        font-size: 1.4em;
+    }
+    
+}
+
+@media only screen and (min-width:500px) and (max-width:599px){
+    .contacto_content {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    }
+
+    .contacto_subInfo img {
+        padding-left: 4em;
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        padding-right: 1em;
+        width: 275px;
+        height: 240px;
+    }
+
+    .contacto_content h2 {
+        font-size: 1.4em;
+    }
+
+    .contacto_content p {
+        font-size: 1.2em;
+    }
+
+    .contacto_info h3 {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:499px){
+    .contacto_content {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    }
+
+    .contacto_subInfo img {
+        padding-left: 3em;
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        padding-right: 1em;
+        width: 210px;
+        height: 210px;
+    }
+
+    .contacto_content h2 {
+        font-size: 1.1em;
+    }
+
+    .contacto_content p {
+        font-size: 1.1em;
+    }
+
+    .contacto_info h3 {
+        font-size: 1.1em;
+    }
+
+    .contacto_info {
+        line-height: 1.5em;
+        
+    }
 }

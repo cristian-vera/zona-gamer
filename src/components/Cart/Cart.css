@@ -126,3 +126,94 @@ form p {
     letter-spacing: 0.05em;
     font-size: 1.3em;
 }
+
+@media only screen and (min-width:669px) and (max-width:770px){
+    form input {
+        width: 60%;
+    }
+
+    form button {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width:553px) and (max-width:668px){
+    form input {
+        width: 60%;
+    }
+
+    form button {
+        width: 25%;
+    }
+
+    .cart_empty p {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:552px){
+    form input {
+        width: 70%;
+    }
+
+    form button {
+        width: 29%;
+    }
+
+    .cart_empty p {
+        font-size: 1.6em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:499px){
+    .deleteButton {
+        background-color: #000000;
+        color:#f0f8ff;
+        border-radius: 1em;
+        height: 2.5em;
+        font-weight: bolder;
+        font-size: 0.9em;
+    }
+
+    .cart_totalPrice {
+        background-color: #000000;
+        font-size: 1em;
+        font-weight: bolder;
+        color:#f0f8ff;
+        border-radius: 1em;
+        width: 10em;
+        text-align: center;
+    }
+
+    form input {
+        width: 70%;
+    }
+
+    form button {
+        width: 45%;
+    }
+
+    .cart_empty h4 {
+        font-size: 1.6em;
+        margin-top: 0.5em;
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
+
+    .cart_img img {
+        height: 90px;
+    }
+
+    .cart_empty p {
+        font-size: 1.6em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .orderSent span {
+        font-size: 1em;
+    }
+}

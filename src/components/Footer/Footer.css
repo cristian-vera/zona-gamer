@@ -9,3 +9,15 @@
 .footer_content p {
     font-family: 'Poppins';
 }
+
+@media only screen and (min-width:420px) and (max-width:560px){
+    .footer_content p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:419px){
+    .footer_content p {
+        font-size: 0.6em;
+    }
+}

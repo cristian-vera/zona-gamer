@@ -17,3 +17,58 @@ h2 {
     font-family: 'Poppins';
 }
 
+@media only screen and (min-width:1144px) and (max-width:1192px){
+    .container_item {
+        padding-left: 13em;
+        padding-right: 13em;
+    }
+}
+
+@media only screen and (min-width:1048px) and (max-width:1143px){
+    .container_item {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1047px){
+    .container_item {
+        padding-left: 9em;
+        padding-right: 9em;
+    }
+}
+
+@media only screen and (min-width:905px) and (max-width:1000px){
+    .container_item {
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
+
+@media only screen and (min-width:793px) and (max-width:904px){
+    .container_item {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+}
+
+@media only screen and (min-width:777px) and (max-width:792px){
+    .container_item {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (min-width:549px) and (max-width:776px){
+    .container_item {
+        padding-left: 2.1em;
+        padding-right: 2.1em;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:548px){
+    .container_item {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
